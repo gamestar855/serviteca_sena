@@ -1,0 +1,123 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  background-color: #f84d4d;
+  color: #fffefe;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 50px;
+  
+  
+}
+
+.nav-links li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.toggle-btn {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  position: relative;
+}
+
+.bar {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.bar:first-child {
+  top: 25%;
+}
+
+.bar:last-child {
+  top: 75%;
+}
+
+.toggle-btn.active .bar:first-child {
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.toggle-btn.active .bar:last-child {
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+.toggle-btn.active .bar {
+  background-color: #333;
+}
+
+.section {
+  padding: 60px 0;
+}
+
+.servicio {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.servicio img {
+  max-width: 300px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+form button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #555;
+}
+
+footer {
+  background-color: #333;
+  color: #fffafa;
+  padding: 20px;
+  text-align: center;
+}
